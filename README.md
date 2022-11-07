@@ -11,11 +11,11 @@ Form validation usually perform two functions
 \
 **Basic Validation** : This validation checks that whether the client add values in the form or not. This can be easily checked using if-else statement. If the client did not add values and click submit this will provide an alert on the screen.
 \
-```
+```JavaScript
    let message = '';
     let valid = true;
     let count = 0;
-    ```
+```
 
 
 ### Demo
