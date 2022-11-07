@@ -2,7 +2,15 @@
  ## Click me if you can
 
 Form-Validation
-It is important to validate form on website because user can add inappropriate values. Form validation normally occur at the server, after the client had entered all the necessary data and then pressed the Submit button. If the data entered by a client was incorrect or was simply missing,it send a request that the form is incorrect and submit again with correct information. 
+\
+It is important to validate form on website because user can add inappropriate values. Form validation normally occur at the server, after the client had entered all the necessary data and then pressed the Submit button. If the data entered by a client was incorrect or was simply missing,it send a request that the form is incorrect and submit again with correct information.
+\
+This process requires HTML, CSS nad JavaScript code for proper validation. Here is the explanation of form-validation with JavaScript
+\
+Form validation usually perform two functions
+\
+**Basic Validation** : This validation checks that whether the client add values in the form or not. This can be easily checked using if-else statement.
+
 
 ### Demo
 
