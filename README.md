@@ -35,7 +35,36 @@ Form validation usually perform two functions
     
 ```
 This is a quiet simple validation in which we check that whether this is an empty string or not and whether this a valid name or not. The code is provided above. 
-
+\
+\
+**Email-id verification** : For this we use regular expression to verify
+```JavaScript
+const emailRegex = /^(?=^.{8,}$)[-_A-Za-z0-9]+([_.-][a-zA-Z0-9]+)*@[A-Za-z0-9]+([.-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$/;
+if(email.length===0){
+        message+='Email is required\n';
+        valid=false;
+        count++;
+    }else if(!emailRegex.test(email)){
+        message+='A valid email is required';
+        valid=false;
+    }
+```
+The **emailRegex**  will check that whether tha data enetered is valid in terms of regular expression or not, if not, it will message an alert on window.
+\
+\
+**Postal-code verification**
+\
+This is as same as email verification. It includes reg.expression and the validate the data.
+```JavaScript
+if(postal.length===0){
+    message+='Postal is required\n';
+    valid=false;
+    count++;
+}else if(!postalRegex.test(postal)){
+    message+='A valid postal is required';
+    valid=false;
+}
+```
 ```JavaScript
    let message = '';
     let valid = true;
