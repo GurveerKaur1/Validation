@@ -2,7 +2,7 @@
  ## Click me if you can
 
 Form-Validation
-Form-validation  is something that is very necessarty
+It is important to validate form on website because user can add inappropriate values. Form validation normally occur at the server, after the client had entered all the necessary data and then pressed the Submit button. If the data entered by a client was incorrect or was simply missing,it send a request that the form is incorrect and submit again with correct information. 
 
 ### Demo
 
