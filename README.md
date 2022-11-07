@@ -1,11 +1,12 @@
 
  ## Click me if you can
 
-A simple point-and-click game made with JavaScript.
+Form-Validation
+Form-validation  is something that is very necessarty
 
 ### Demo
 
-Click [here]( https://gurveerkaur1.github.io/Validation/ ) to play.
+Click [here]( https://gurveerkaur1.github.io/Validation/ ) to check.
 
 <br />
 
