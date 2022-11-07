@@ -8,14 +8,12 @@ It is important to validate form on website because user can add inappropriate v
 This process requires **HTML, CSS and JavaScript** code for proper validation. Here is the explanation of form-validation with JavaScript
 \
 \
-Form validation usually perform two functions
+Form validation usually perform **two** functions
 \
 \
-**Basic Validation** : This validation checks that whether the client add values in the form or not. This can be easily checked using if-else statement. If the client did not add values and click submit this will provide an alert on the screen.
-
+**1.Basic Validation** : This validation checks that whether the client add values in the form or not. This can be easily checked using if-else statement. If the client did not add values and click submit this will provide an alert on the screen.
 \
-\
-**Data format validation** : The entered data must be checked for correct form of value
+**2.Data format validation** : The entered data must be checked for correct form of value
 \
 \
 **JavaScript first, last name validation and age verification**
@@ -77,6 +75,7 @@ if(postal.length===0){
 \
 \
 **Basic validation and submission of the form**
+At the moment the client click the submit button, it would be verified using following function
 ```JavaScript
 if(count === 5){
     alert('Fields with * are required');
@@ -90,7 +89,8 @@ if(count === 5){
 
 
 
-### Demo
+### Form validation
+This README.md file provide information about how to validate form. You can click the link below to check the testing.
 
 Click [here]( https://gurveerkaur1.github.io/Validation/ ) to check.
 
