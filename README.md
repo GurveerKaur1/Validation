@@ -86,6 +86,85 @@ if(count === 5){
     // form.submit();
 }
 ```
+**This the complete code of the above explanation**
+```Javascript
+
+function validate(){
+    let firstName = select('.first').value.trim();
+    let lastName = select('.last').value.trim();
+    let age = select('.age').value.trim();
+    let email = select('.email').value.trim();
+    let postal = select('.postal').value.trim();
+    
+
+    function isValid(input){
+        if(Number.isInteger(input)){
+            return true;
+        }
+
+        return false;
+    }
+
+
+    let message = '';
+    let valid = true;
+    let count = 0;
+
+    if(firstName.length ===0 && !isNaN(firstName.value) ){
+        message+= 'First name is required\n';
+        valid = false;
+        count++;
+    }
+
+    if(lastName.length ===0 && isNaN(lastName.value)){
+        message+= 'Last name is required\n';
+        valid = false;
+        count++;
+    }
+
+    if(age.length===0){
+        message+='Age is required\n';
+        valid=false;
+        count++;
+    }else if(!isValid(Number(age))){
+        message+='Age is required\n';
+        valid=false;
+    }
+
+    if(email.length===0){
+        message+='Email is required\n';
+        valid=false;
+        count++;
+    }else if(!emailRegex.test(email)){
+        message+='A valid email is required';
+        valid=false;
+    }
+
+
+
+if(postal.length===0){
+    message+='Postal is required\n';
+    valid=false;
+    count++;
+}else if(!postalRegex.test(postal)){
+    message+='A valid postal is required';
+    valid=false;
+}
+
+if(count === 5){
+    alert('Fields with * are required');
+}else if (!valid){
+    alert(message);
+}else {
+    alert('Form submitted');
+    // form.submit();
+}
+}
+
+onEvent('click', btn, function(){
+    validate();
+});
+```
 
 
 
