@@ -11,6 +11,26 @@ Form validation usually perform two functions
 \
 **Basic Validation** : This validation checks that whether the client add values in the form or not. This can be easily checked using if-else statement. If the client did not add values and click submit this will provide an alert on the screen.
 \
+**Data format validation** : The entered data must be checked for correct form of value
+\
+**JavaScript first and last name validation**
+```JavaScript
+ if(firstName.length ===0 ){
+        message+= 'First name is required\n';
+        valid = false;
+        count++;
+    }
+
+    if(lastName.length ===0){
+        message+= 'Last name is required\n';
+        valid = false;
+        count++;
+    }
+
+    
+```
+This is a quiet simple validation in which we check that whether this is an empty string or not and whether this a valid name or not. The code is provided above. 
+
 ```JavaScript
    let message = '';
     let valid = true;

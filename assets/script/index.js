@@ -39,13 +39,13 @@ function validate(){
     let valid = true;
     let count = 0;
 
-    if(firstName.length ===0){
+    if(firstName.length ===0 && !isNaN(firstName.value) ){
         message+= 'First name is required\n';
         valid = false;
         count++;
     }
 
-    if(lastName.length ===0){
+    if(lastName.length ===0 && isNaN(lastName.value)){
         message+= 'Last name is required\n';
         valid = false;
         count++;
