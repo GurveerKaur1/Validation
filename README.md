@@ -1,7 +1,6 @@
 
- ## Click me if you can
+ ## Form-Validation
 
-### Form-Validation
 \
 It is important to validate form on website because user can add inappropriate values. Form validation normally occur at the server, after the client had entered all the necessary data and then pressed the Submit button. If the data entered by a client was incorrect or was simply missing,it send a request that the form is incorrect and submit again with correct information.
 \
@@ -13,16 +12,7 @@ Form validation usually perform two functions
 \
 \
 **Basic Validation** : This validation checks that whether the client add values in the form or not. This can be easily checked using if-else statement. If the client did not add values and click submit this will provide an alert on the screen.
-```JavaScript
-if(count === 5){
-    alert('Fields with * are required');
-}else if (!valid){
-    alert(message);
-}else {
-    alert('Form submitted');
-    // form.submit();
-}
-```
+
 \
 \
 **Data format validation** : The entered data must be checked for correct form of value
@@ -74,6 +64,7 @@ The **emailRegex**  will check that whether tha data enetered is valid in terms 
 \
 This is as same as email verification. It includes reg.expression and the validate the data.
 ```JavaScript
+const postalRegex = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
 if(postal.length===0){
     message+='Postal is required\n';
     valid=false;
@@ -85,7 +76,7 @@ if(postal.length===0){
 ```
 \
 \
-**Basic Validation** : This validation checks that whether the client add values in the form or not. This can be easily checked using if-else statement. If the client did not add values and click submit this will provide an alert on the screen.
+**Basic validation and submission of the form**
 ```JavaScript
 if(count === 5){
     alert('Fields with * are required');
